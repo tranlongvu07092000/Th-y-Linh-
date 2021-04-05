@@ -4,12 +4,10 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	
-	float a,b;
-	
-	printf ("Nhap so tien bang do la:"); scanf("%f",&a);
-	b = a*16689;
-	printf("Bang tien viet la:%.3f",b);
-	
+	float C,F;
+    
+    printf("Nhap do C :"); scanf("%f",&C);
+    F=(9*C + 160)/5;
+    printf("chuyen sang do F =%.1f",F);
 	return 0;
 }
