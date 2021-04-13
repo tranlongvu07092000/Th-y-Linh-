@@ -13,6 +13,6 @@ int main(){
 		c++;
 		
 	}
-	printf("Chuoi %s co chua :%d nguyen am va %d phu am.",a,b,c);
+	printf("Chuoi %s co chua : \n %d nguyen am va %d phu am.",a,b,c);
 	return 0;
 }
