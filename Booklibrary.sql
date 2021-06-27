@@ -70,4 +70,12 @@ ALTER TABLE IssueDetails
 go
 -- Tạo khóa chính cho 2 cột BookCode và MemberCode cho bảng IssueDetails
 ALTER TABLE IssueDetails
-ADD Constraint Khoa_chinh PRIMARY KEY (BookCode , MemberCode
+ADD Constraint Khoa_chinh PRIMARY KEY (BookCode , MemberCode)
+go
+-- Chèn dữ liệu cho các bảng
+INSERT INTO Book (BookCode , BookTitle , Author , Edition, BookPrice,Copies)
+Values ('10' , 'Luật Trí Não', 'Em không nhớ' ,'Lần cuối' , '100$' , '10' )
+INSERT INTO Member (MemberCode , Name , Address , PhoneNumber )
+Values ('01' , 'NguyenVanNhat' , 'HaNoi' , '0358356981')
+INSERT INTO IssueDetails (BookCode , MemberCode , IssueDate , ReturnDate )
+Values ('10' , '01' ,'11-05-2021' , '07-09-2021')
